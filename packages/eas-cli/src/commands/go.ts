@@ -184,6 +184,7 @@ jobs:
 `;
 
 export default class Go extends EasCommand {
+  static override hidden = true;
   static override description = 'Create a custom Expo Go and submit to TestFlight';
 
   static override flags = {
